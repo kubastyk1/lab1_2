@@ -10,7 +10,7 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
  * Time: 00:01
  */
 public class PaymentFactory implements PaymentFactoryImpl {
-    public Payment create(Id aggregateId, ClientData clientData, Money amount) {
-        return new Payment(aggregateId, clientData, amount);
+    public Payment create(ClientData clientData, Money amount) {
+        return new Payment(Id.generate(), clientData, amount);
     }
 }
