@@ -1,4 +1,4 @@
-package pl.com.bottega.ecommerce.sales.domain.taxes;
+package pl.com.bottega.ecommerce.sales.domain.taxes.calculators;
 
 public class FoodTaxCalculator extends BaseTaxCalculator {
     protected double getTaxRatio() {

@@ -1,6 +1,4 @@
-package pl.com.bottega.ecommerce.sales.domain.taxes;
-
-import pl.com.bottega.ecommerce.sales.domain.productscatalog.ProductType;
+package pl.com.bottega.ecommerce.sales.domain.taxes.calculators;
 
 public class DrugTaxCalculator extends BaseTaxCalculator {
     protected double getTaxRatio() {

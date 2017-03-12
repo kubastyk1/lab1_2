@@ -1,6 +1,9 @@
 package pl.com.bottega.ecommerce.sales.domain.taxes;
 
 import pl.com.bottega.ecommerce.sales.domain.productscatalog.ProductType;
+import pl.com.bottega.ecommerce.sales.domain.taxes.calculators.DrugTaxCalculator;
+import pl.com.bottega.ecommerce.sales.domain.taxes.calculators.FoodTaxCalculator;
+import pl.com.bottega.ecommerce.sales.domain.taxes.calculators.StandardTaxCalculator;
 import pl.com.bottega.ecommerce.sharedkernel.Money;
 
 import java.util.EnumMap;
