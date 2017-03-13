@@ -24,11 +24,8 @@ import pl.com.bottega.ecommerce.canonicalmodel.publishedlanguage.ClientData;
 import pl.com.bottega.ecommerce.sharedkernel.Money;
 
 
-public class Invoice  {
-
-
-	private ClientData client;
-
+class Invoice  {
+    private ClientData client;
 
 	private Money net;
 
