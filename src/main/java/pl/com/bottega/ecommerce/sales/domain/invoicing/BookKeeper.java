@@ -30,19 +30,18 @@ public class BookKeeper {
 			BigDecimal ratio = null;
 			String desc = null;
 
+			TaxCreator creator;
+
 			switch (item.getProductData().getType()) {
 			case DRUG:
-				ratio = BigDecimal.valueOf(0.05);
-				desc = "5% (D)";
-				break;
-			case FOOD:
-				ratio = BigDecimal.valueOf(0.07);
-				desc = "7% (F)";
-				break;
-			case STANDARD:
-				ratio = BigDecimal.valueOf(0.23);
-				desc = "23%";
-				break;
+	             creator = new DrugTax();
+	             break;
+	        case FOOD:
+	             creator = new FoodTax();
+	             break;
+	        case STANDARD:
+		         creator = new StandardTax();
+		         break;
 
 			default:
 				throw new IllegalArgumentException(item.getProductData().getType() + " not handled");
