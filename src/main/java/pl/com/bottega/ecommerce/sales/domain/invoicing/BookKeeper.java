@@ -15,8 +15,6 @@
  */
 package pl.com.bottega.ecommerce.sales.domain.invoicing;
 
-import java.math.BigDecimal;
-
 import pl.com.bottega.ecommerce.canonicalmodel.publishedlanguage.Id;
 import pl.com.bottega.ecommerce.sharedkernel.Money;
 
@@ -27,30 +25,8 @@ public class BookKeeper {
 
 		for (RequestItem item : invoiceRequest.getItems()) {
 			Money net = item.getTotalCost();
-			BigDecimal ratio = null;
-			String desc = null;
 
-			TaxCreator creator;
-
-			switch (item.getProductData().getType()) {
-			case DRUG:
-	             creator = new DrugTax();
-	             break;
-	        case FOOD:
-	             creator = new FoodTax();
-	             break;
-	        case STANDARD:
-		         creator = new StandardTax();
-		         break;
-
-			default:
-				throw new IllegalArgumentException(item.getProductData().getType() + " not handled");
-			}
-
-			Money taxValue = net.multiplyBy(ratio);
-
-			Tax tax = new Tax(taxValue, desc);
-
+			Tax tax = new TaxCalculator().calculateTax(item.getProductData().getType(), net);
 
 			InvoiceLine invoiceLine = new InvoiceLine(item.getProductData(),
 					item.getQuantity(), net, tax);
