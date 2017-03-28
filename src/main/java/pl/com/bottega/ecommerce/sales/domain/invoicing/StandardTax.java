@@ -5,7 +5,7 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
 public class StandardTax implements TaxCreator{
 
 	public Tax createTax(Money money) {
-		return TaxFactory.creatTax(money.multiplyBy(0.23), "23%");
+		return TaxFactory.createTax(money.multiplyBy(0.23), "23%");
 	}
 
 }

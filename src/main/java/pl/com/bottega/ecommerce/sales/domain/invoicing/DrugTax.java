@@ -5,7 +5,7 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
 public class DrugTax implements TaxCreator{
 
 	public Tax createTax(Money money) {
-		return TaxFactory.creatTax(money.multiplyBy(0.05), "5% (D)");
+		return TaxFactory.createTax(money.multiplyBy(0.05), "5% (D)");
 	}
 
 }
