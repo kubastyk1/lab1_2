@@ -233,12 +233,14 @@
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_mQFZ4AioEeeYuY682xxFNA" client="_ok7m0AinEeeYuY682xxFNA" supplier="_hAiy4AioEeeYuY682xxFNA" contract="_hAiy4AioEeeYuY682xxFNA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_BT9sYAioEeeYuY682xxFNA" name="TaxFactory"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_Wj7DAAioEeeYuY682xxFNA" client="_wQrACQimEeeYuY682xxFNA" supplier="_l5qTYAinEeeYuY682xxFNA"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_Xrnq4AioEeeYuY682xxFNA" client="_wQrACQimEeeYuY682xxFNA" supplier="_ok7m0AinEeeYuY682xxFNA"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_YUr2AAioEeeYuY682xxFNA" client="_wQrACQimEeeYuY682xxFNA" supplier="_jjMLQAinEeeYuY682xxFNA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_Z-MxgAioEeeYuY682xxFNA" client="_jjMLQAinEeeYuY682xxFNA" supplier="_BT9sYAioEeeYuY682xxFNA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_awi0cAioEeeYuY682xxFNA" client="_ok7m0AinEeeYuY682xxFNA" supplier="_BT9sYAioEeeYuY682xxFNA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_b4y18AioEeeYuY682xxFNA" client="_l5qTYAinEeeYuY682xxFNA" supplier="_BT9sYAioEeeYuY682xxFNA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_cpWJIAioEeeYuY682xxFNA" client="_BT9sYAioEeeYuY682xxFNA" supplier="_wQrALQimEeeYuY682xxFNA"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_hAiy4AioEeeYuY682xxFNA" name="TaxCreator"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2JhlABOvEeeFsOKGsvqZ7Q" name="TaxCalculator"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_8uixMBOvEeeFsOKGsvqZ7Q" client="_wQrACQimEeeYuY682xxFNA" supplier="_2JhlABOvEeeFsOKGsvqZ7Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_-7GIUBOvEeeFsOKGsvqZ7Q" client="_2JhlABOvEeeFsOKGsvqZ7Q" supplier="_l5qTYAinEeeYuY682xxFNA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ALIz4BOwEeeFsOKGsvqZ7Q" client="_2JhlABOvEeeFsOKGsvqZ7Q" supplier="_ok7m0AinEeeYuY682xxFNA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_BryuUBOwEeeFsOKGsvqZ7Q" client="_2JhlABOvEeeFsOKGsvqZ7Q" supplier="_jjMLQAinEeeYuY682xxFNA"/>
 </uml:Model>
